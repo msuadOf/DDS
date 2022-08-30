@@ -6,5 +6,5 @@ module Sin_ROM
     input  wire rst_n,    
 	input wire clk
 ); 
-ROM_Sin_table sin_rom( .doa(DAC_Data), .addra(Addr), .clka(clk), .rsta(~rst_n) );
+ROM_Sin_table sin_rom( .doa(DAC_Data), .addra(Addr[15:1]), .clka(clk), .rsta(~rst_n) );
 endmodule //Sin_ROM

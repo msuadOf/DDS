@@ -9,19 +9,19 @@
         <pack_enable>false</pack_enable>
     </GeneralConfig>
     <ImplementOption>
-        <imp_type>9k_fast</imp_type>
+        <imp_type>9k</imp_type>
     </ImplementOption>
     <MemoryType>
         <mem_type>SP</mem_type>
     </MemoryType>
     <PortAOption>
-        <depth_a>65536</depth_a>
+        <depth_a>32768</depth_a>
         <width_a>12</width_a>
         <register_a>None</register_a>
     </PortAOption>
     <MemoryInitialization>
         <init_file_enable>true</init_file_enable>
-        <init_file>../../Sin_A12bit_addr16bit_ROM.mif</init_file>
+        <init_file>../../Sin_A12bit_addr15bit_ROM.mif</init_file>
     </MemoryInitialization>
     <FillMemoryInitValues>
         <fill_all>NONE</fill_all>

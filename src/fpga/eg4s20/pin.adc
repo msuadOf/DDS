@@ -1,0 +1,13 @@
+set_pin_assignment	{ DAC_Data_sin_out[10] }	{ LOCATION = E16; IOSTANDARD = LVCMOS33; SLEWRATE = FAST; }
+set_pin_assignment	{ DAC_Data_sin_out[11] }	{ LOCATION = F16; IOSTANDARD = LVCMOS33; SLEWRATE = FAST; }
+set_pin_assignment	{ DAC_Data_sin_out[4] }	{ LOCATION = B14; IOSTANDARD = LVCMOS33; SLEWRATE = FAST; }
+set_pin_assignment	{ DAC_Data_sin_out[5] }	{ LOCATION = B15; IOSTANDARD = LVCMOS33; SLEWRATE = FAST; }
+set_pin_assignment	{ DAC_Data_sin_out[6] }	{ LOCATION = B16; IOSTANDARD = LVCMOS33; SLEWRATE = FAST; }
+set_pin_assignment	{ DAC_Data_sin_out[7] }	{ LOCATION = C15; IOSTANDARD = LVCMOS33; SLEWRATE = FAST; }
+set_pin_assignment	{ DAC_Data_sin_out[8] }	{ LOCATION = C16; IOSTANDARD = LVCMOS33; SLEWRATE = FAST; }
+set_pin_assignment	{ DAC_Data_sin_out[9] }	{ LOCATION = E13; IOSTANDARD = LVCMOS33; SLEWRATE = FAST; }
+set_pin_assignment	{ clk }	{ LOCATION = R7; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment	{ rst_n }	{ LOCATION = A9; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+
+
+
