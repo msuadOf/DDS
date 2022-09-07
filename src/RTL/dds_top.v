@@ -1,5 +1,6 @@
 `define DAC_WIDTH 12
 `define ADDR_WIDTH 16
+`define div_num 10
 module dds_top (
     input wire clk,
     input wire rst_n,
@@ -9,28 +10,18 @@ module dds_top (
 );
 
 //config F,A
-wire [28:1] Freq_KW=0;
-wire [`DAC_WIDTH:1] Ampl_KW=1;
+wire [28:1] Freq_KW=50;
+wire [`DAC_WIDTH:1] Ampl_KW=2048;
 
 //div clock
 wire div_clk;
+clk_div clk_div(
+    .clk(clk),
+    .div_n(1),
+    .rst_n(rst_n),
+    .clk_out(div_clk)
+);
 
-reg [9:0] div_clk_cnt;
-always @(posedge clk or negedge rst_n) begin
-    if(!rst_n)
-        div_clk_cnt=0;
-    else if(div_clk_cnt<1000)
-        div_clk_cnt=div_clk_cnt+1;
-    else
-        div_clk_cnt=0;
-end
-
-always @(*) begin
-
-    if(clk<500) div_clk=1;
-    else div_clk=0;
-
-end
 
 DDS 
 #(.ADDR_WIDTH(`ADDR_WIDTH),.DAC_WIDTH(`DAC_WIDTH))

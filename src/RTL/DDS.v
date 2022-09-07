@@ -27,7 +27,7 @@ module DDS
    	Phase_Acc U1
    (.clk(clk),
 	.rst_n(rst_n), 
-	.KW(28'd1),  //可以修改该数值获得想要的频率 KW=f*2^28/500000
+	.KW(Freq_KW),  //可以修改该数值获得想要的频率 KW=f*2^28/500000
 	.Addr(Addr_DDS)
     );
 		    
