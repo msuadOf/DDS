@@ -1,4 +1,4 @@
-module	uart_top(
+module	uart(
 	input			clk,
 	input			sys_rst_n,
 	input			uart_rxd,	

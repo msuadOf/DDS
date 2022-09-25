@@ -9,5 +9,13 @@ set_pin_assignment	{ DAC_Data_sin_out[9] }	{ LOCATION = E13; IOSTANDARD = LVCMOS
 set_pin_assignment	{ clk }	{ LOCATION = R7; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
 set_pin_assignment	{ rst_n }	{ LOCATION = A9; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
 
+set_pin_assignment	{ ctrl[6] }	{ LOCATION = A14; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment	{ ctrl[5] }	{ LOCATION = A13; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment	{ ctrl[4] }	{ LOCATION = B12; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment	{ ctrl[3] }	{ LOCATION = A12; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment	{ ctrl[2] }	{ LOCATION = A11; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment	{ ctrl[1] }	{ LOCATION = B10; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+set_pin_assignment	{ ctrl[0] }	{ LOCATION = A10; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+
 
 
